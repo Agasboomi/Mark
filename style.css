@@ -1,0 +1,106 @@
+*{
+    background-color: #1E201E;
+}
+
+ body{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+   
+}  
+
+.a{
+    font-size: 30px;
+    background-color: #3C3D37;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    background-color: #3C3D37;
+    color: #f6f9f5;
+    font-family: 'Times New Roman', Times, serif;
+    border:3px solid black;
+    padding: 10px;
+}
+
+sup{
+    background-color: #3C3D37 ;
+}
+
+#main{
+    background-color: #3C3D37;
+    border: 5px solid ;
+    padding: 45px;
+    box-shadow: 1px 1px 10px #a3a3a3 ;
+}
+.h{
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+h5{
+    background-color: #3C3D37;
+    color: #eaefe8;
+}
+
+
+/* -------------------------------------------------------------- */
+
+
+.box1{
+    border: 2px solid;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #a3a3a3 ;
+    background-color: #3C3D37;
+}
+
+.in{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #3C3D37;
+
+}
+
+input{
+    background-color: white;
+    box-sizing: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.but{
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #3C3D37;
+}
+
+button{
+    cursor: pointer;
+    font-size: 20px;
+    background-color:#3C3D37;
+}
+
+#result{
+    color: white;
+    font-size: 100px;
+    background-color: #3C3D37;
+}
+
+h4{
+    color: white;
+    background-color: #3C3D37;
+}
+
+button:hover{
+    background-color: rgb(116, 217, 116);
+}

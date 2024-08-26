@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box1">
+        <div class="h">
+            <h4>12<sup>th</sup> mark Percentage</h4>
+        </div>
+        <div class="in">
+            <input id="maths" type="number" placeholder="Enter Maths" >
+            <input id="english" type="number" placeholder="Enter English">
+            <input id="chemis" type="number" placeholder="Enter Chemistry">
+            <input id="phy"  type="number" placeholder="Enter Physics">
+            <input id="com" type="number" placeholder="Enter Computer/Biology">
+            <input id="tam" type="number" placeholder="Enter Tamil">
+        </div>    
+        <div class="but">
+            <button onclick="calculate()">CHECK</button>
+        </div>
+        <div id="result"></div>
+    </div>
+</body>
+<script>
+    function calculate(){
+        const Maths = parseFloat(document.getElementById("maths").value) || 0;
+        const eng = parseFloat  (document.getElementById("english").value) || 0;
+        const chem = parseFloat (document.getElementById("chemis").value) || 0;
+        const phy = parseFloat (document.getElementById("phy").value) || 0;
+        const com = parseFloat (document.getElementById("com").value) || 0;
+        const tam = parseFloat (document.getElementById("tam").value )|| 0;  
+
+        if ([Maths, eng, chem, phy, com, tam].some(mark => mark < 0 || mark > 100)){
+        document.getElementById("result").innerHTML = 'Error: Each mark must be between 0 and 100.</span>';
+                return;
+            }
+        const total = Math.floor(((Maths+eng+chem+phy+com+tam)/600)*100);
+        
+        const res = document.getElementById("result");
+        res.innerText= `${total} %`;
+}
+</script>
+
+</html>
